@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA CALCULA LOS AÑOS DEL MUNDIAL </h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var anhoMundial = 1930;
+    var limite = parseInt(prompt("Ingrese el año para calcular"))
+
+    while (anhoMundial<=limite){
+        imprimir("Hubo Munidal en el año: " + anhoMundial);
+        anhoMundial = anhoMundial + 4;
+    }
+
+    
+    imprimir ("Fin Programa")
+
+    
+
+</script>
